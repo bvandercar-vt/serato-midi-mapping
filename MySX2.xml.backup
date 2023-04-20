@@ -1,0 +1,791 @@
+<midi app="Serato DJ Pro 3.0.4.526">
+    <control channel="4" event_type="Note On" control="9">
+        <userio event="click">
+            <beat_jump_step deck_set="Default" deck_id="3" slot_id="8">
+                <translation action_on="press" behaviour="explicit"/>
+            </beat_jump_step>
+            <beat_jump deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="forward"/>
+            </beat_jump>
+        </userio>
+        <userio event="output">
+            <beat_jump deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="any">
+                    <alias name="none" value="0"/>
+                    <alias name="backward" value="0"/>
+                    <alias name="forward" value="127"/>
+                </translation>
+            </beat_jump>
+        </userio>
+    </control>
+    <control channel="7" event_type="Note On" control="120">
+        <userio event="click">
+            <widget_mode deck_set="Default" deck_id="0" slot_id="3">
+                <translation action_on="press" behaviour="multi_toggle"/>
+            </widget_mode>
+        </userio>
+        <userio event="output">
+            <widget_mode deck_set="Default" deck_id="0" slot_id="3">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </widget_mode>
+            <widget_mode deck_set="Default" deck_id="0" slot_id="3">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </widget_mode>
+            <widget_mode deck_set="Default" deck_id="0" slot_id="3">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </widget_mode>
+            <widget_mode deck_set="Default" deck_id="0" slot_id="3">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </widget_mode>
+        </userio>
+    </control>
+    <control channel="4" event_type="Note On" control="75">
+        <userio event="click">
+            <key_shift deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Up"/>
+            </key_shift>
+        </userio>
+        <userio event="output">
+            <key_shift_feedback deck_set="Default" deck_id="3" slot_id="1">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </key_shift_feedback>
+        </userio>
+    </control>
+    <control channel="4" event_type="Note On" control="90">
+        <userio event="click">
+            <musical_key_sync deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </musical_key_sync>
+        </userio>
+    </control>
+    <control channel="4" event_type="Note On" control="91">
+        <userio event="click">
+            <codfather_ac deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </codfather_ac>
+        </userio>
+        <userio event="output">
+            <codfather_ac deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
+            </codfather_ac>
+        </userio>
+    </control>
+    <control channel="7" event_type="Note On" control="121">
+        <userio event="click">
+            <num_decks_displayed deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </num_decks_displayed>
+        </userio>
+        <userio event="output">
+            <num_decks_displayed deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="2Deck" value="0"/>
+                    <alias name="3Deck" value="0"/>
+                    <alias name="4Deck" value="0"/>
+                </translation>
+            </num_decks_displayed>
+            <num_decks_displayed deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="2Deck" value="0"/>
+                    <alias name="3Deck" value="0"/>
+                    <alias name="4Deck" value="0"/>
+                </translation>
+            </num_decks_displayed>
+            <num_decks_displayed deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="2Deck" value="0"/>
+                    <alias name="3Deck" value="0"/>
+                    <alias name="4Deck" value="0"/>
+                </translation>
+            </num_decks_displayed>
+            <num_decks_displayed deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="2Deck" value="0"/>
+                    <alias name="3Deck" value="0"/>
+                    <alias name="4Deck" value="0"/>
+                </translation>
+            </num_decks_displayed>
+        </userio>
+    </control>
+    <control channel="3" event_type="Note On" control="9">
+        <userio event="click">
+            <beat_jump_step deck_set="Default" deck_id="2" slot_id="8">
+                <translation action_on="press" behaviour="explicit"/>
+            </beat_jump_step>
+            <beat_jump deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="forward"/>
+            </beat_jump>
+        </userio>
+        <userio event="output">
+            <beat_jump deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="any">
+                    <alias name="none" value="0"/>
+                    <alias name="backward" value="0"/>
+                    <alias name="forward" value="127"/>
+                </translation>
+            </beat_jump>
+        </userio>
+    </control>
+    <control channel="7" event_type="Control Change" data_type="Relative 2&apos;s Complement" control="100">
+        <userio event="click">
+            <zoom_level_adjust deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any" behaviour="explicit"/>
+            </zoom_level_adjust>
+        </userio>
+    </control>
+    <control channel="3" event_type="Note On" control="44">
+        <userio event="click">
+            <beat_jump_step deck_set="Default" deck_id="2" slot_id="7">
+                <translation action_on="press" behaviour="explicit"/>
+            </beat_jump_step>
+            <beat_jump deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="forward"/>
+            </beat_jump>
+        </userio>
+        <userio event="output">
+            <beat_jump deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="any">
+                    <alias name="none" value="0"/>
+                    <alias name="backward" value="0"/>
+                    <alias name="forward" value="127"/>
+                </translation>
+            </beat_jump>
+        </userio>
+    </control>
+    <control channel="3" event_type="Note On" control="36">
+        <userio event="click">
+            <beat_jump_step deck_set="Default" deck_id="2" slot_id="7">
+                <translation action_on="press" behaviour="explicit"/>
+            </beat_jump_step>
+            <beat_jump deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="backward"/>
+            </beat_jump>
+        </userio>
+        <userio event="output">
+            <beat_jump deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="any">
+                    <alias name="none" value="0"/>
+                    <alias name="backward" value="127"/>
+                    <alias name="forward" value="0"/>
+                </translation>
+            </beat_jump>
+        </userio>
+    </control>
+    <control channel="1" event_type="Note On" control="91">
+        <userio event="click">
+            <codfather_ac deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </codfather_ac>
+        </userio>
+        <userio event="output">
+            <codfather_ac deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
+            </codfather_ac>
+        </userio>
+    </control>
+    <control channel="3" event_type="Note On" control="1">
+        <userio event="click">
+            <beat_jump_step deck_set="Default" deck_id="2" slot_id="8">
+                <translation action_on="press" behaviour="explicit"/>
+            </beat_jump_step>
+            <beat_jump deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="backward"/>
+            </beat_jump>
+        </userio>
+        <userio event="output">
+            <beat_jump deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="any">
+                    <alias name="none" value="0"/>
+                    <alias name="backward" value="127"/>
+                    <alias name="forward" value="0"/>
+                </translation>
+            </beat_jump>
+        </userio>
+    </control>
+    <control channel="1" event_type="Note On" control="90">
+        <userio event="click">
+            <musical_key_sync deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </musical_key_sync>
+        </userio>
+    </control>
+    <control channel="2" event_type="Note On" control="36">
+        <userio event="click">
+            <beat_jump_step deck_set="Default" deck_id="1" slot_id="7">
+                <translation action_on="press" behaviour="explicit"/>
+            </beat_jump_step>
+            <beat_jump deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="backward"/>
+            </beat_jump>
+        </userio>
+        <userio event="output">
+            <beat_jump deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="any">
+                    <alias name="none" value="0"/>
+                    <alias name="backward" value="127"/>
+                    <alias name="forward" value="0"/>
+                </translation>
+            </beat_jump>
+        </userio>
+    </control>
+    <control channel="3" event_type="Note On" control="90">
+        <userio event="click">
+            <musical_key_sync deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </musical_key_sync>
+        </userio>
+    </control>
+    <control channel="3" event_type="Note On" control="91">
+        <userio event="click">
+            <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </codfather_ac>
+        </userio>
+        <userio event="output">
+            <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
+            </codfather_ac>
+        </userio>
+    </control>
+    <control channel="1" event_type="Note On" control="64">
+        <userio event="click">
+            <quantize deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </quantize>
+            <quantize deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </quantize>
+            <quantize deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </quantize>
+            <quantize deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </quantize>
+        </userio>
+        <userio event="output">
+            <quantize deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+        </userio>
+    </control>
+    <control channel="3" event_type="Note On" control="64">
+        <userio event="click">
+            <quantize deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </quantize>
+            <quantize deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </quantize>
+            <quantize deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </quantize>
+            <quantize deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </quantize>
+        </userio>
+        <userio event="output">
+            <quantize deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+        </userio>
+    </control>
+    <control channel="1" event_type="Note On" control="74">
+        <userio event="click">
+            <key_shift deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Down"/>
+            </key_shift>
+        </userio>
+        <userio event="output">
+            <musical_key_sync deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
+            </musical_key_sync>
+        </userio>
+    </control>
+    <control channel="1" event_type="Note On" control="75">
+        <userio event="click">
+            <key_shift deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Up"/>
+            </key_shift>
+        </userio>
+        <userio event="output">
+            <key_shift_feedback deck_set="Default" deck_id="0" slot_id="1">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </key_shift_feedback>
+        </userio>
+    </control>
+    <control channel="2" event_type="Note On" control="74">
+        <userio event="click">
+            <key_shift deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Down"/>
+            </key_shift>
+        </userio>
+        <userio event="output">
+            <musical_key_sync deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
+            </musical_key_sync>
+        </userio>
+    </control>
+    <control channel="2" event_type="Note On" control="75">
+        <userio event="click">
+            <key_shift deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Up"/>
+            </key_shift>
+        </userio>
+        <userio event="output">
+            <key_shift_feedback deck_set="Default" deck_id="1" slot_id="1">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </key_shift_feedback>
+        </userio>
+    </control>
+    <control channel="2" event_type="Note On" control="91">
+        <userio event="click">
+            <codfather_ac deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </codfather_ac>
+        </userio>
+        <userio event="output">
+            <codfather_ac deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
+            </codfather_ac>
+        </userio>
+    </control>
+    <control channel="2" event_type="Note On" control="90">
+        <userio event="click">
+            <musical_key_sync deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </musical_key_sync>
+        </userio>
+    </control>
+    <control channel="3" event_type="Note On" control="74">
+        <userio event="click">
+            <key_shift deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Down"/>
+            </key_shift>
+        </userio>
+        <userio event="output">
+            <musical_key_sync deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
+            </musical_key_sync>
+        </userio>
+    </control>
+    <control channel="3" event_type="Note On" control="75">
+        <userio event="click">
+            <key_shift deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Up"/>
+            </key_shift>
+        </userio>
+        <userio event="output">
+            <key_shift_feedback deck_set="Default" deck_id="2" slot_id="1">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </key_shift_feedback>
+        </userio>
+    </control>
+    <control channel="4" event_type="Note On" control="74">
+        <userio event="click">
+            <key_shift deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Down"/>
+            </key_shift>
+        </userio>
+        <userio event="output">
+            <musical_key_sync deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
+            </musical_key_sync>
+        </userio>
+    </control>
+    <control channel="1" event_type="Note On" control="36">
+        <userio event="click">
+            <beat_jump_step deck_set="Default" deck_id="0" slot_id="7">
+                <translation action_on="press" behaviour="explicit"/>
+            </beat_jump_step>
+            <beat_jump deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="backward"/>
+            </beat_jump>
+        </userio>
+        <userio event="output">
+            <beat_jump deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="none" value="0"/>
+                    <alias name="backward" value="127"/>
+                    <alias name="forward" value="0"/>
+                </translation>
+            </beat_jump>
+        </userio>
+    </control>
+    <control channel="1" event_type="Note On" control="44">
+        <userio event="click">
+            <beat_jump_step deck_set="Default" deck_id="0" slot_id="7">
+                <translation action_on="press" behaviour="explicit"/>
+            </beat_jump_step>
+            <beat_jump deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="forward"/>
+            </beat_jump>
+        </userio>
+        <userio event="output">
+            <beat_jump deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="none" value="0"/>
+                    <alias name="backward" value="0"/>
+                    <alias name="forward" value="127"/>
+                </translation>
+            </beat_jump>
+        </userio>
+    </control>
+    <control channel="1" event_type="Note On" control="1">
+        <userio event="click">
+            <beat_jump_step deck_set="Default" deck_id="0" slot_id="8">
+                <translation action_on="press" behaviour="explicit"/>
+            </beat_jump_step>
+            <beat_jump deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="backward"/>
+            </beat_jump>
+        </userio>
+        <userio event="output">
+            <beat_jump deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="none" value="0"/>
+                    <alias name="backward" value="127"/>
+                    <alias name="forward" value="0"/>
+                </translation>
+            </beat_jump>
+        </userio>
+    </control>
+    <control channel="1" event_type="Note On" control="9">
+        <userio event="click">
+            <beat_jump_step deck_set="Default" deck_id="0" slot_id="8">
+                <translation action_on="press" behaviour="explicit"/>
+            </beat_jump_step>
+            <beat_jump deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="forward"/>
+            </beat_jump>
+        </userio>
+        <userio event="output">
+            <beat_jump deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="none" value="0"/>
+                    <alias name="backward" value="0"/>
+                    <alias name="forward" value="127"/>
+                </translation>
+            </beat_jump>
+        </userio>
+    </control>
+    <control channel="2" event_type="Note On" control="44">
+        <userio event="click">
+            <beat_jump_step deck_set="Default" deck_id="1" slot_id="7">
+                <translation action_on="press" behaviour="explicit"/>
+            </beat_jump_step>
+            <beat_jump deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="forward"/>
+            </beat_jump>
+        </userio>
+        <userio event="output">
+            <beat_jump deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="any">
+                    <alias name="none" value="0"/>
+                    <alias name="backward" value="0"/>
+                    <alias name="forward" value="127"/>
+                </translation>
+            </beat_jump>
+        </userio>
+    </control>
+    <control channel="2" event_type="Note On" control="9">
+        <userio event="click">
+            <beat_jump_step deck_set="Default" deck_id="1" slot_id="8">
+                <translation action_on="press" behaviour="explicit"/>
+            </beat_jump_step>
+            <beat_jump deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="forward"/>
+            </beat_jump>
+        </userio>
+        <userio event="output">
+            <beat_jump deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="any">
+                    <alias name="none" value="0"/>
+                    <alias name="backward" value="0"/>
+                    <alias name="forward" value="127"/>
+                </translation>
+            </beat_jump>
+        </userio>
+    </control>
+    <control channel="2" event_type="Note On" control="1">
+        <userio event="click">
+            <beat_jump_step deck_set="Default" deck_id="1" slot_id="8">
+                <translation action_on="press" behaviour="explicit"/>
+            </beat_jump_step>
+            <beat_jump deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="backward"/>
+            </beat_jump>
+        </userio>
+        <userio event="output">
+            <beat_jump deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="any">
+                    <alias name="none" value="0"/>
+                    <alias name="backward" value="127"/>
+                    <alias name="forward" value="0"/>
+                </translation>
+            </beat_jump>
+        </userio>
+    </control>
+    <control channel="4" event_type="Note On" control="36">
+        <userio event="click">
+            <beat_jump_step deck_set="Default" deck_id="3" slot_id="7">
+                <translation action_on="press" behaviour="explicit"/>
+            </beat_jump_step>
+            <beat_jump deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="backward"/>
+            </beat_jump>
+        </userio>
+        <userio event="output">
+            <beat_jump deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="any">
+                    <alias name="none" value="0"/>
+                    <alias name="backward" value="127"/>
+                    <alias name="forward" value="0"/>
+                </translation>
+            </beat_jump>
+        </userio>
+    </control>
+    <control channel="4" event_type="Note On" control="44">
+        <userio event="click">
+            <beat_jump_step deck_set="Default" deck_id="3" slot_id="7">
+                <translation action_on="press" behaviour="explicit"/>
+            </beat_jump_step>
+            <beat_jump deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="forward"/>
+            </beat_jump>
+        </userio>
+        <userio event="output">
+            <beat_jump deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="any">
+                    <alias name="none" value="0"/>
+                    <alias name="backward" value="0"/>
+                    <alias name="forward" value="127"/>
+                </translation>
+            </beat_jump>
+        </userio>
+    </control>
+    <control channel="4" event_type="Note On" control="1">
+        <userio event="click">
+            <beat_jump_step deck_set="Default" deck_id="3" slot_id="8">
+                <translation action_on="press" behaviour="explicit"/>
+            </beat_jump_step>
+            <beat_jump deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="backward"/>
+            </beat_jump>
+        </userio>
+        <userio event="output">
+            <beat_jump deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="any">
+                    <alias name="none" value="0"/>
+                    <alias name="backward" value="127"/>
+                    <alias name="forward" value="0"/>
+                </translation>
+            </beat_jump>
+        </userio>
+    </control>
+</midi>

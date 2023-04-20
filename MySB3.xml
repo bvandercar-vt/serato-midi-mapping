@@ -1,0 +1,546 @@
+<midi app="Serato DJ Pro 2.3.2.77">
+	
+	
+	<!-- USEFUL STUFF:
+    <control channel="1" event_type="Note On" control="116">
+        <userio event="click">
+			Toggle num chans:
+            <num_decks_displayed deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </num_decks_displayed>
+			
+			Set specific effect:
+			<effect_select_static_input deck_set="DJ Effects" deck_id="0" slot_id="2">
+					<translation action_on="press" behaviour="static" static_value="Reverb"/>
+			</effect_select_static_input>
+        </userio>
+    </control>
+	
+	<control channel="1" event_type="Note On" control="20">
+        <userio event="click">
+            <sort_by deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Artist"/>
+            </sort_by>
+        </userio>
+    </control>
+	-->
+	
+	<!-- FX display -->
+    <control channel="1" event_type="Note On" control="104">
+        <userio event="click">
+            <widget_mode deck_set="Default" deck_id="0" slot_id="3">
+                <translation action_on="press" behaviour="multi_toggle"/>
+            </widget_mode>
+        </userio>
+    </control>
+	<!-- Samples display-->
+    <control channel="2" event_type="Note On" control="104">
+        <userio event="click">
+            <widget_mode deck_set="Default" deck_id="0" slot_id="4">
+                <translation action_on="press" behaviour="multi_toggle"/>
+            </widget_mode>
+        </userio>
+    </control>
+	<!-- crossfader -->
+
+   <control channel="7" event_type="Control Change" data_type="Relative Binary Offset" control="31">
+        <userio event="click">
+            <zoom_level_adjust deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any"/>
+            </zoom_level_adjust>
+        </userio>
+    </control>
+	
+	
+	<!-- shift loop pads -->
+	<!--
+	<control channel="8" event_type="Note On" control="68">
+        <userio event="click">
+            <shift_loop deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="explicit"/>
+            </shift_loop>
+        </userio>
+        <userio event="output">
+            <shift_loop deck_set="Default" deck_id="0" slot_id="0">
+               <translation action_on="any" behaviour="static" static_value="on"/>
+            </shift_loop>
+        </userio>
+    </control>
+    <control channel="8" event_type="Note On" control="71">
+        <userio event="click">
+            <shift_loop deck_set="Default" deck_id="0" slot_id="1">
+                <translation action_on="press" behaviour="explicit"/>
+            </shift_loop>
+        </userio>
+        <userio event="output">
+            <shift_loop deck_set="Default" deck_id="0" slot_id="1">
+                <translation action_on="any" behaviour="static" static_value="on"/>
+            </shift_loop>
+        </userio>
+    </control>
+	<control channel="9" event_type="Note On" control="68">
+        <userio event="click">
+            <shift_loop deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="press" behaviour="explicit"/>
+            </shift_loop>
+        </userio>
+        <userio event="output">
+            <shift_loop deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="any" behaviour="static" static_value="on"/>
+            </shift_loop>
+        </userio>
+    </control>
+    <control channel="9" event_type="Note On" control="71">
+        <userio event="click">
+            <shift_loop deck_set="Default" deck_id="1" slot_id="1">
+                <translation action_on="press" behaviour="explicit"/>
+            </shift_loop>
+        </userio>
+        <userio event="output">
+            <shift_loop deck_set="Default" deck_id="1" slot_id="1">
+                <translation action_on="any" behaviour="static" static_value="on"/>
+            </shift_loop>
+        </userio>
+    </control>
+	-->
+	
+	
+	
+	<!-- loop buttons to control key -->
+	<!-- deck 1 -->
+    <control channel="1" event_type="Note On" control="97">
+		<userio event="click">
+			<key_shift deck_set="Default" deck_id="0" slot_id="0">
+				<translation action_on="press" behaviour="static" static_value="Down"/>
+			</key_shift>
+		</userio>
+    </control>
+    <control channel="1" event_type="Note On" control="98">
+        <userio event="click">
+            <key_shift deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Up"/>
+            </key_shift>
+			<modifier_1>
+				<translation action_on="any" behaviour="explicit"/>
+			</modifier_1>
+        </userio>
+    </control>
+    <control channel="1" event_type="Note On" control="80">
+		<userio event="click">
+			<musical_key_sync deck_set="Default" deck_id="0" slot_id="0">
+				<translation action_on="press" behaviour="toggle"/>
+			</musical_key_sync>
+		</userio>
+    </control>
+	<!-- deck 2 -->
+	<control channel="2" event_type="Note On" control="97">
+        <userio event="click">
+            <key_shift deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Down"/>
+            </key_shift>
+        </userio>
+    </control>
+    <control channel="2" event_type="Note On" control="98">
+        <userio event="click">
+            <key_shift deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Up"/>
+            </key_shift>
+        </userio>
+    </control>
+	<control channel="2" event_type="Note On" control="80">
+        <userio event="click">
+            <musical_key_sync deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </musical_key_sync>
+        </userio>
+    </control>
+	<!-- deck 3 -->
+	<control channel="3" event_type="Note On" control="97">
+        <userio event="click">
+            <key_shift deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Down"/>
+            </key_shift>
+        </userio>
+    </control>
+    <control channel="3" event_type="Note On" control="98">
+        <userio event="click">
+            <key_shift deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Up"/>
+            </key_shift>
+        </userio>
+    </control>
+    <control channel="3" event_type="Note On" control="80">
+		<userio event="click">
+			<musical_key_sync deck_set="Default" deck_id="2" slot_id="0">
+				<translation action_on="press" behaviour="toggle"/>
+			</musical_key_sync>
+		</userio>
+    </control>
+	<!-- deck 4 -->
+	<control channel="4" event_type="Note On" control="97">
+        <userio event="click">
+            <key_shift deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Down"/>
+            </key_shift>
+        </userio>
+    </control>
+    <control channel="4" event_type="Note On" control="98">
+        <userio event="click">
+            <key_shift deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Up"/>
+            </key_shift>
+        </userio>
+    </control>
+    <control channel="4" event_type="Note On" control="80">
+		<userio event="click">
+			<musical_key_sync deck_set="Default" deck_id="3" slot_id="0">
+				<translation action_on="press" behaviour="toggle"/>
+			</musical_key_sync>
+		</userio>
+    </control>
+	
+	<!-- cue button set grid in beatgrid mode -->
+	<control channel="1" event_type="Note On" control="12">
+		<case>
+            <condition>
+                <grid_edit_mode deck_set="Default" deck_id="0" slot_id="0" operator="equal" cmp_value="on"/>
+            </condition>
+            <userio event="click">
+				<grid_set deck_set="Default" deck_id="0" slot_id="0">
+					<translation action_on="any" behaviour="explicit"/>
+				</grid_set>
+			</userio>
+        </case>
+        <case>
+            <condition>
+                <grid_edit_mode deck_set="Default" deck_id="0" slot_id="0" operator="equal" cmp_value="off"/>
+            </condition>
+            <userio event="click">
+				<cue deck_set="Default" deck_id="0" slot_id="0">
+					<translation action_on="any" behaviour="explicit"/>
+				</cue>
+			</userio>
+			<userio event="output">
+				<cue deck_set="Default" deck_id="0" slot_id="0">
+					<translation action_on="any">
+						<alias name="on" value="127"/>
+						<alias name="off" value="0"/>
+					</translation>
+				</cue>
+			</userio>
+        </case>  
+    </control>
+	<control channel="2" event_type="Note On" control="12">
+		<case>
+            <condition>
+                <grid_edit_mode deck_set="Default" deck_id="1" slot_id="0" operator="equal" cmp_value="on"/>
+            </condition>
+            <userio event="click">
+				<grid_set deck_set="Default" deck_id="1" slot_id="0">
+					<translation action_on="any" behaviour="explicit"/>
+				</grid_set>
+			</userio>
+        </case>
+        <case>
+            <condition>
+                <grid_edit_mode deck_set="Default" deck_id="1" slot_id="0" operator="equal" cmp_value="off"/>
+            </condition>
+            <userio event="click">
+				<cue deck_set="Default" deck_id="1" slot_id="0">
+					<translation action_on="any" behaviour="explicit"/>
+				</cue>
+			</userio>
+			<userio event="output">
+				<cue deck_set="Default" deck_id="1" slot_id="0">
+					<translation action_on="any">
+						<alias name="on" value="127"/>
+						<alias name="off" value="0"/>
+					</translation>
+				</cue>
+			</userio>
+        </case>  
+    </control>
+	<control channel="3" event_type="Note On" control="12">
+		<case>
+            <condition>
+                <grid_edit_mode deck_set="Default" deck_id="2" slot_id="0" operator="equal" cmp_value="on"/>
+            </condition>
+            <userio event="click">
+				<grid_set deck_set="Default" deck_id="2" slot_id="0">
+					<translation action_on="any" behaviour="explicit"/>
+				</grid_set>
+			</userio>
+        </case>
+        <case>
+            <condition>
+                <grid_edit_mode deck_set="Default" deck_id="2" slot_id="0" operator="equal" cmp_value="off"/>
+            </condition>
+            <userio event="click">
+				<cue deck_set="Default" deck_id="2" slot_id="0">
+					<translation action_on="any" behaviour="explicit"/>
+				</cue>
+			</userio>
+			<userio event="output">
+				<cue deck_set="Default" deck_id="2" slot_id="0">
+					<translation action_on="any">
+						<alias name="on" value="127"/>
+						<alias name="off" value="0"/>
+					</translation>
+				</cue>
+			</userio>
+        </case>  
+    </control>
+	<control channel="4" event_type="Note On" control="12">
+		<case>
+            <condition>
+                <grid_edit_mode deck_set="Default" deck_id="3" slot_id="0" operator="equal" cmp_value="on"/>
+            </condition>
+            <userio event="click">
+				<grid_set deck_set="Default" deck_id="3" slot_id="0">
+					<translation action_on="any" behaviour="explicit"/>
+				</grid_set>
+			</userio>
+        </case>
+        <case>
+            <condition>
+                <grid_edit_mode deck_set="Default" deck_id="3" slot_id="0" operator="equal" cmp_value="off"/>
+            </condition>
+            <userio event="click">
+				<cue deck_set="Default" deck_id="3" slot_id="0">
+					<translation action_on="any" behaviour="explicit"/>
+				</cue>
+			</userio>
+			<userio event="output">
+				<cue deck_set="Default" deck_id="3" slot_id="0">
+					<translation action_on="any">
+						<alias name="on" value="127"/>
+						<alias name="off" value="0"/>
+					</translation>
+				</cue>
+			</userio>
+        </case>  
+    </control>
+	
+	
+	<!-- load button, deck 1 -->
+	<control channel="7" event_type="Note On" control="70">
+		<case>
+            <condition>
+                <play deck_set="Default" deck_id="0" slot_id="0" operator="equal" cmp_value="off"/>
+            </condition>
+			<userio event="click">
+				<load_track deck_set="Default" deck_id="0" slot_id="0">
+					<translation action_on="press" behaviour="explicit"/>
+				</load_track>
+				<quantize deck_set="Default" deck_id="0" slot_id="0">
+					<translation action_on="any" behaviour="static" static_value="on"/>
+				</quantize>
+				<!--
+				<musical_key_sync deck_set="Default" deck_id="0" slot_id="0">
+					<translation action_on="any" behaviour="static" static_value="on"/>
+				</musical_key_sync>
+				-->
+				<auto_loop_specific_length deck_set="Default" deck_id="0" slot_id="7">
+					<translation action_on="press" behaviour="static" static_value="selected"/>
+				</auto_loop_specific_length>
+				<beat_jump_step deck_set="Default" deck_id="0" slot_id="7">
+					<translation action_on="press" behaviour="explicit"/>
+				</beat_jump_step>
+			</userio>
+		</case>
+    </control>
+	<!-- load button, deck 2 -->
+	<control channel="7" event_type="Note On" control="71">
+		<case>
+            <condition>
+                <play deck_set="Default" deck_id="1" slot_id="0" operator="equal" cmp_value="off"/>
+            </condition>
+			<userio event="click">
+				<load_track deck_set="Default" deck_id="1" slot_id="0">
+					<translation action_on="press" behaviour="explicit"/>
+				</load_track>
+				<quantize deck_set="Default" deck_id="1" slot_id="0">
+					<translation action_on="any" behaviour="static" static_value="on"/>
+				</quantize>
+				<!--
+				<musical_key_sync deck_set="Default" deck_id="1" slot_id="0">
+					<translation action_on="any" behaviour="static" static_value="on"/>
+				</musical_key_sync>
+				-->
+				<auto_loop_specific_length deck_set="Default" deck_id="1" slot_id="7">
+					<translation action_on="press" behaviour="explicit"/>
+				</auto_loop_specific_length>
+				<beat_jump_step deck_set="Default" deck_id="1" slot_id="7">
+					<translation action_on="press" behaviour="explicit"/>
+				</beat_jump_step>
+			</userio>
+		</case>
+    </control>
+	<!-- load button, deck 3 -->
+	<control channel="7" event_type="Note On" control="72">
+		<case>
+            <condition>
+                <play deck_set="Default" deck_id="2" slot_id="0" operator="equal" cmp_value="off"/>
+            </condition>
+			<userio event="click">
+				<load_track deck_set="Default" deck_id="2" slot_id="0">
+					<translation action_on="press" behaviour="explicit"/>
+				</load_track>
+				<quantize deck_set="Default" deck_id="2" slot_id="0">
+					<translation action_on="any" behaviour="static" static_value="on"/>
+				</quantize>
+				<!--
+				<musical_key_sync deck_set="Default" deck_id="2" slot_id="0">
+					<translation action_on="any" behaviour="static" static_value="on"/>
+				</musical_key_sync>
+				-->
+				<auto_loop_specific_length deck_set="Default" deck_id="2" slot_id="7">
+					<translation action_on="press" behaviour="explicit"/>
+				</auto_loop_specific_length>
+			</userio>
+		</case>
+    </control>
+	<!-- load button, deck 4 -->
+    <control channel="7" event_type="Note On" control="73">
+		<case>
+            <condition>
+                <play deck_set="Default" deck_id="3" slot_id="0" operator="equal" cmp_value="off"/>
+            </condition>
+			<userio event="click">
+				<load_track deck_set="Default" deck_id="3" slot_id="0">
+					<translation action_on="press" behaviour="explicit"/>
+				</load_track>
+				<quantize deck_set="Default" deck_id="3" slot_id="0">
+					<translation action_on="any" behaviour="static" static_value="on"/>
+				</quantize>
+				<!--
+				<musical_key_sync deck_set="Default" deck_id="3" slot_id="0">
+					<translation action_on="any" behaviour="static" static_value="on"/>
+				</musical_key_sync>
+				-->
+				<auto_loop_specific_length deck_set="Default" deck_id="3" slot_id="7">
+					<translation action_on="press" behaviour="explicit"/>
+				</auto_loop_specific_length>
+			</userio>
+		</case>
+    </control>
+	
+	
+	<!--
+	<control channel="8" event_type="Note On" control="48">
+        <userio event="click">
+            <cue_point deck_set="Default" deck_id="0" slot_id="8" >
+                <translation action_on="any" behaviour="explicit"/>
+            </cue_point>
+        </userio>
+        <userio event="output">
+            <cue_point deck_set="Default" deck_id="0" slot_id="8">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </cue_point>
+        </userio>
+    </control>
+	<control channel="8" event_type="Note On" control="56">
+        <userio event="click">
+            <cue_point_delete deck_set="Default" deck_id="0" slot_id="8">
+                <translation action_on="press" behaviour="explicit"/>
+            </cue_point_delete>
+        </userio>
+    </control>
+	-->
+	
+	<!-- play button eject -->
+	<!--
+	<control channel="1" event_type="Note On" control="71">
+		<case>
+            <condition>
+                <play deck_set="Default" deck_id="0" slot_id="0" operator="equal" cmp_value="off"/>
+            </condition>
+			<userio event="click">
+				<eject deck_set="Default" deck_id="0" slot_id="0">
+					<translation action_on="press" behaviour="explicit"/>
+				</eject>
+			</userio>
+		</case>
+		<case>
+            <condition>
+                <play deck_set="Default" deck_id="0" slot_id="0" operator="equal" cmp_value="on"/>
+            </condition>
+			<userio event="click">
+				<reverse deck_set="Default" deck_id="0" slot_id="0">
+					<translation action_on="press" behaviour="toggle"/>
+				</reverse>
+			</userio>
+		</case>
+    </control>
+		<control channel="2" event_type="Note On" control="71">
+		<case>
+            <condition>
+                <play deck_set="Default" deck_id="1" slot_id="0" operator="equal" cmp_value="off"/>
+            </condition>
+			<userio event="click">
+				<eject deck_set="Default" deck_id="1" slot_id="0">
+					<translation action_on="press" behaviour="explicit"/>
+				</eject>
+			</userio>
+		</case>
+		<case>
+            <condition>
+                <play deck_set="Default" deck_id="1" slot_id="0" operator="equal" cmp_value="on"/>
+            </condition>
+			<userio event="click">
+				<reverse deck_set="Default" deck_id="1" slot_id="0">
+					<translation action_on="press" behaviour="toggle"/>
+				</reverse>
+			</userio>
+		</case>
+    </control>
+    	<control channel="3" event_type="Note On" control="71">
+		<case>
+            <condition>
+                <play deck_set="Default" deck_id="2" slot_id="0" operator="equal" cmp_value="off"/>
+            </condition>
+			<userio event="click">
+				<eject deck_set="Default" deck_id="2" slot_id="0">
+					<translation action_on="press" behaviour="explicit"/>
+				</eject>
+			</userio>
+		</case>
+		<case>
+            <condition>
+                <play deck_set="Default" deck_id="2" slot_id="0" operator="equal" cmp_value="on"/>
+            </condition>
+			<userio event="click">
+				<reverse deck_set="Default" deck_id="2" slot_id="0">
+					<translation action_on="press" behaviour="toggle"/>
+				</reverse>
+			</userio>
+		</case>
+    </control>
+	<control channel="4" event_type="Note On" control="71">
+		<case>
+            <condition>
+                <play deck_set="Default" deck_id="3" slot_id="0" operator="equal" cmp_value="off"/>
+            </condition>
+			<userio event="click">
+				<eject deck_set="Default" deck_id="3" slot_id="0">
+					<translation action_on="press" behaviour="explicit"/>
+				</eject>
+			</userio>
+		</case>
+		<case>
+            <condition>
+                <play deck_set="Default" deck_id="3" slot_id="0" operator="equal" cmp_value="on"/>
+            </condition>
+			<userio event="click">
+				<reverse deck_set="Default" deck_id="3" slot_id="0">
+					<translation action_on="press" behaviour="toggle"/>
+				</reverse>
+			</userio>
+		</case>
+    </control>
+	-->
+	
+</midi>
