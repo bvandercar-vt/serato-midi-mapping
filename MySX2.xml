@@ -1135,7 +1135,7 @@
             </track_gain>
         </userio>
     </control>
-    <control channel="3" event_type="Note On" control="64">
+    <control channel="3" event_type="Note On" control="21">
         <userio event="click">
             <quantize deck_set="Default" deck_id="0" slot_id="0">
                 <translation action_on="press" behaviour="toggle"/>
@@ -1152,54 +1152,6 @@
         </userio>
         <userio event="output">
             <quantize deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="3" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="3" slot_id="0">
                 <translation action_on="any">
                     <alias name="on" value="127"/>
                     <alias name="off" value="0"/>
@@ -1207,7 +1159,7 @@
             </quantize>
         </userio>
     </control>
-    <control channel="4" event_type="Note On" control="64">
+    <control channel="4" event_type="Note On" control="21">
         <userio event="click">
             <quantize deck_set="Default" deck_id="0" slot_id="0">
                 <translation action_on="press" behaviour="toggle"/>
@@ -1224,54 +1176,6 @@
         </userio>
         <userio event="output">
             <quantize deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="3" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="3" slot_id="0">
                 <translation action_on="any">
                     <alias name="on" value="127"/>
                     <alias name="off" value="0"/>
@@ -1279,7 +1183,7 @@
             </quantize>
         </userio>
     </control>
-    <control channel="1" event_type="Note On" control="64">
+    <control channel="1" event_type="Note On" control="21">
         <userio event="click">
             <quantize deck_set="Default" deck_id="0" slot_id="0">
                 <translation action_on="press" behaviour="toggle"/>
@@ -1296,54 +1200,6 @@
         </userio>
         <userio event="output">
             <quantize deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="3" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="3" slot_id="0">
                 <translation action_on="any">
                     <alias name="on" value="127"/>
                     <alias name="off" value="0"/>
@@ -1351,7 +1207,7 @@
             </quantize>
         </userio>
     </control>
-    <control channel="2" event_type="Note On" control="64">
+    <control channel="2" event_type="Note On" control="21">
         <userio event="click">
             <quantize deck_set="Default" deck_id="0" slot_id="0">
                 <translation action_on="press" behaviour="toggle"/>
@@ -1368,54 +1224,6 @@
         </userio>
         <userio event="output">
             <quantize deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="3" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="3" slot_id="0">
                 <translation action_on="any">
                     <alias name="on" value="127"/>
                     <alias name="off" value="0"/>
