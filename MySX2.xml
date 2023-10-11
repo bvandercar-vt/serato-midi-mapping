@@ -574,9 +574,6 @@
     </control>
     <control channel="3" event_type="Note On" control="44">
         <userio event="click">
-            <beat_jump_step deck_set="Default" deck_id="2" slot_id="9">
-                <translation action_on="press" behaviour="explicit"/>
-            </beat_jump_step>
             <beat_jump deck_set="Default" deck_id="2" slot_id="0">
                 <translation action_on="press" behaviour="static" static_value="forward"/>
             </beat_jump>
@@ -593,9 +590,6 @@
     </control>
     <control channel="3" event_type="Note On" control="36">
         <userio event="click">
-            <beat_jump_step deck_set="Default" deck_id="2" slot_id="9">
-                <translation action_on="press" behaviour="explicit"/>
-            </beat_jump_step>
             <beat_jump deck_set="Default" deck_id="2" slot_id="0">
                 <translation action_on="press" behaviour="static" static_value="backward"/>
             </beat_jump>
@@ -651,9 +645,6 @@
     </control>
     <control channel="2" event_type="Note On" control="36">
         <userio event="click">
-            <beat_jump_step deck_set="Default" deck_id="1" slot_id="9">
-                <translation action_on="press" behaviour="explicit"/>
-            </beat_jump_step>
             <beat_jump deck_set="Default" deck_id="1" slot_id="0">
                 <translation action_on="press" behaviour="static" static_value="backward"/>
             </beat_jump>
@@ -825,9 +816,6 @@
     </control>
     <control channel="1" event_type="Note On" control="36">
         <userio event="click">
-            <beat_jump_step deck_set="Default" deck_id="0" slot_id="9">
-                <translation action_on="press" behaviour="explicit"/>
-            </beat_jump_step>
             <beat_jump deck_set="Default" deck_id="0" slot_id="0">
                 <translation action_on="press" behaviour="static" static_value="backward"/>
             </beat_jump>
@@ -844,9 +832,6 @@
     </control>
     <control channel="1" event_type="Note On" control="44">
         <userio event="click">
-            <beat_jump_step deck_set="Default" deck_id="0" slot_id="9">
-                <translation action_on="press" behaviour="explicit"/>
-            </beat_jump_step>
             <beat_jump deck_set="Default" deck_id="0" slot_id="0">
                 <translation action_on="press" behaviour="static" static_value="forward"/>
             </beat_jump>
@@ -895,9 +880,6 @@
     </control>
     <control channel="2" event_type="Note On" control="44">
         <userio event="click">
-            <beat_jump_step deck_set="Default" deck_id="1" slot_id="9">
-                <translation action_on="press" behaviour="explicit"/>
-            </beat_jump_step>
             <beat_jump deck_set="Default" deck_id="1" slot_id="0">
                 <translation action_on="press" behaviour="static" static_value="forward"/>
             </beat_jump>
@@ -946,9 +928,6 @@
     </control>
     <control channel="4" event_type="Note On" control="36">
         <userio event="click">
-            <beat_jump_step deck_set="Default" deck_id="3" slot_id="9">
-                <translation action_on="press" behaviour="explicit"/>
-            </beat_jump_step>
             <beat_jump deck_set="Default" deck_id="3" slot_id="0">
                 <translation action_on="press" behaviour="static" static_value="backward"/>
             </beat_jump>
@@ -965,9 +944,6 @@
     </control>
     <control channel="4" event_type="Note On" control="44">
         <userio event="click">
-            <beat_jump_step deck_set="Default" deck_id="3" slot_id="9">
-                <translation action_on="press" behaviour="explicit"/>
-            </beat_jump_step>
             <beat_jump deck_set="Default" deck_id="3" slot_id="0">
                 <translation action_on="press" behaviour="static" static_value="forward"/>
             </beat_jump>
