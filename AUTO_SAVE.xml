@@ -15,54 +15,6 @@
             </beat_jump>
         </userio>
     </control>
-    <control channel="3" event_type="Note On" control="21">
-        <userio event="click">
-            <quantize deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </quantize>
-            <quantize deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </quantize>
-            <quantize deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </quantize>
-            <quantize deck_set="Default" deck_id="3" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </quantize>
-        </userio>
-        <userio event="output">
-            <quantize deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-            <quantize deck_set="Default" deck_id="3" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-        </userio>
-    </control>
     <control channel="7" event_type="Note On" control="120">
         <userio event="click">
             <widget_mode deck_set="Default" deck_id="0" slot_id="3">
@@ -184,6 +136,61 @@
                     <alias name="off" value="0"/>
                 </translation>
             </widget_mode>
+        </userio>
+    </control>
+    <control channel="7" event_type="Control Change" control="3">
+        <userio event="click">
+            <upfader_curve deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any" behaviour="explicit"/>
+            </upfader_curve>
+        </userio>
+    </control>
+    <control channel="3" event_type="Note On" control="21">
+        <userio event="click">
+            <quantize deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </quantize>
+            <quantize deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </quantize>
+            <quantize deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </quantize>
+            <quantize deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </quantize>
+        </userio>
+        <userio event="output">
+            <quantize deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
+            <quantize deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </quantize>
         </userio>
     </control>
     <control channel="7" event_type="Note On" control="85">
@@ -661,11 +668,36 @@
             </track_gain>
         </userio>
     </control>
-    <control channel="7" event_type="Control Change" control="3">
+    <control channel="5" event_type="Note On" control="102">
         <userio event="click">
-            <upfader_curve deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="any" behaviour="explicit"/>
-            </upfader_curve>
+            <select_favorite_fx_bank deck_set="DJ Effects" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="A"/>
+            </select_favorite_fx_bank>
+        </userio>
+        <userio event="output">
+            <select_favorite_fx_bank deck_set="DJ Effects" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="Off" value="0"/>
+                    <alias name="A" value="127"/>
+                    <alias name="B" value="0"/>
+                </translation>
+            </select_favorite_fx_bank>
+        </userio>
+    </control>
+    <control channel="3" event_type="Note On" control="91">
+        <userio event="click">
+            <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </codfather_ac>
+        </userio>
+        <userio event="output">
+            <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
+            </codfather_ac>
         </userio>
     </control>
     <control channel="7" event_type="Control Change" data_type="Relative 2&apos;s Complement" control="100">
@@ -767,22 +799,6 @@
             <musical_key_sync deck_set="Default" deck_id="2" slot_id="0">
                 <translation action_on="press" behaviour="toggle"/>
             </musical_key_sync>
-        </userio>
-    </control>
-    <control channel="3" event_type="Note On" control="91">
-        <userio event="click">
-            <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </codfather_ac>
-        </userio>
-        <userio event="output">
-            <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                    <alias name="disabled" value="0"/>
-                </translation>
-            </codfather_ac>
         </userio>
     </control>
     <control channel="1" event_type="Note On" control="74">
@@ -1518,6 +1534,22 @@
                     <alias name="off" value="0"/>
                 </translation>
             </grid_edit_mode>
+        </userio>
+    </control>
+    <control channel="6" event_type="Note On" control="102">
+        <userio event="click">
+            <select_favorite_fx_bank deck_set="DJ Effects" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="B"/>
+            </select_favorite_fx_bank>
+        </userio>
+        <userio event="output">
+            <select_favorite_fx_bank deck_set="DJ Effects" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="Off" value="0"/>
+                    <alias name="A" value="0"/>
+                    <alias name="B" value="127"/>
+                </translation>
+            </select_favorite_fx_bank>
         </userio>
     </control>
 </midi>
