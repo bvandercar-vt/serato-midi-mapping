@@ -31,6 +31,16 @@
             </zoom_level_adjust>
         </userio>
     </control>
+    <!-- Shift + Deck 1 "Slot" button sets record gain to set value -->
+    <control channel="1" event_type="Note On" control="89">
+        <userio event="click">
+            <record_gain deck_set="Default" deck_id="0" slot_id="0">
+                <translation >
+                    <range in_min="0" in_max="1" out_min="0.7" out_max="0.7" />
+                </translation>
+            </record_gain>
+        </userio>
+    </control>
     <!-- Shift + FX control track gains -->
     <control channel="7" event_type="Note On" control="112">
         <userio event="click">
@@ -926,4 +936,5 @@
             </select_favorite_fx_bank>
         </userio>
     </control>
+
 </midi>

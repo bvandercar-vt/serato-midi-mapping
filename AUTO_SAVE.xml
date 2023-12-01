@@ -426,6 +426,20 @@
             </codfather_ac>
         </userio>
     </control>
+    <control channel="1" event_type="Note On" control="89">
+        <userio event="click">
+            <record_gain deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any"/>
+            </record_gain>
+        </userio>
+        <userio event="output">
+            <record_gain deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="Default Value" value="0"/>
+                </translation>
+            </record_gain>
+        </userio>
+    </control>
     <control channel="7" event_type="Note On" control="84">
         <userio event="click">
             <track_gain deck_set="Default" deck_id="0" slot_id="0">
