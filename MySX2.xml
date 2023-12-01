@@ -109,6 +109,67 @@
             </track_gain>
         </userio>
     </control>
+    <!-- Shift + Cue ejects track -->
+    <control channel="1" event_type="Note On" control="72">
+        <userio event="click">
+            <eject deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="explicit"/>
+            </eject>
+        </userio>
+        <userio event="output">
+            <eject deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </eject>
+        </userio>
+    </control>
+    <control channel="2" event_type="Note On" control="72">
+        <userio event="click">
+            <eject deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="press" behaviour="explicit"/>
+            </eject>
+        </userio>
+        <userio event="output">
+            <eject deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </eject>
+        </userio>
+    </control>
+    <control channel="3" event_type="Note On" control="72">
+        <userio event="click">
+            <eject deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="explicit"/>
+            </eject>
+        </userio>
+        <userio event="output">
+            <eject deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </eject>
+        </userio>
+    </control>
+    <control channel="4" event_type="Note On" control="72">
+        <userio event="click">
+            <eject deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="press" behaviour="explicit"/>
+            </eject>
+        </userio>
+        <userio event="output">
+            <eject deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </eject>
+        </userio>
+    </control>
     <!-- Key Shift Down/Up - Output indicates the shift mode -->
     <control channel="1" event_type="Note On" control="74">
         <userio event="click">
