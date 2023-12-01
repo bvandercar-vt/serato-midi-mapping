@@ -16,13 +16,13 @@
         </userio>
     </control>
     <!-- Sampler Volume controls Upfader Curve -->
-    <control channel="7" event_type="Control Change" control="3">
+    <!-- <control channel="7" event_type="Control Change" control="3">
         <userio event="click">
             <upfader_curve deck_set="Default" deck_id="0" slot_id="0">
                 <translation action_on="any" behaviour="explicit"/>
             </upfader_curve>
         </userio>
-    </control>
+    </control> -->
     <!-- Shift + scroll controls zoom -->
     <control channel="7" event_type="Control Change" data_type="Relative 2&apos;s Complement" control="100">
         <userio event="click">

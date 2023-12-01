@@ -15,6 +15,21 @@
             </beat_jump>
         </userio>
     </control>
+    <control channel="7" event_type="Note On" control="120">
+        <userio event="click">
+            <widget_mode deck_set="Default" deck_id="0" slot_id="3">
+                <translation action_on="press" behaviour="multi_toggle"/>
+            </widget_mode>
+        </userio>
+        <userio event="output">
+            <widget_mode deck_set="Default" deck_id="0" slot_id="3">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </widget_mode>
+        </userio>
+    </control>
     <control channel="3" event_type="Note On" control="21">
         <userio event="click">
             <quantize deck_set="Default" deck_id="0" slot_id="0">
@@ -61,21 +76,6 @@
                     <alias name="off" value="0"/>
                 </translation>
             </quantize>
-        </userio>
-    </control>
-    <control channel="7" event_type="Note On" control="120">
-        <userio event="click">
-            <widget_mode deck_set="Default" deck_id="0" slot_id="3">
-                <translation action_on="press" behaviour="multi_toggle"/>
-            </widget_mode>
-        </userio>
-        <userio event="output">
-            <widget_mode deck_set="Default" deck_id="0" slot_id="3">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </widget_mode>
         </userio>
     </control>
     <control channel="7" event_type="Note On" control="85">
@@ -291,11 +291,20 @@
             </select_favorite_fx_bank>
         </userio>
     </control>
-    <control channel="7" event_type="Control Change" control="3">
+    <control channel="3" event_type="Note On" control="91">
         <userio event="click">
-            <upfader_curve deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="any" behaviour="explicit"/>
-            </upfader_curve>
+            <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </codfather_ac>
+        </userio>
+        <userio event="output">
+            <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
+            </codfather_ac>
         </userio>
     </control>
     <control channel="7" event_type="Control Change" data_type="Relative 2&apos;s Complement" control="100">
@@ -415,22 +424,6 @@
                     <alias name="disabled" value="0"/>
                 </translation>
             </musical_key_sync>
-        </userio>
-    </control>
-    <control channel="3" event_type="Note On" control="91">
-        <userio event="click">
-            <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </codfather_ac>
-        </userio>
-        <userio event="output">
-            <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                    <alias name="disabled" value="0"/>
-                </translation>
-            </codfather_ac>
         </userio>
     </control>
     <control channel="7" event_type="Note On" control="84">
