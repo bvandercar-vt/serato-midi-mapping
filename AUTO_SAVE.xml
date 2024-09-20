@@ -109,6 +109,21 @@
             </codfather_ac>
         </userio>
     </control>
+    <control channel="1" event_type="Note On" control="104">
+        <userio event="click">
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="1">
+                <translation action_on="press" behaviour="static" static_value="on"/>
+            </channel_effects_select>
+        </userio>
+        <userio event="output">
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="1">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </channel_effects_select>
+        </userio>
+    </control>
     <control channel="1" event_type="Note On" control="121">
         <userio event="click">
             <grid_edit_mode deck_set="Default" deck_id="0" slot_id="0">
@@ -284,8 +299,11 @@
         <userio event="output">
             <select_favorite_fx_bank deck_set="DJ Effects" deck_id="0" slot_id="0">
                 <translation action_on="any">
+                    <alias name="Off" value="0"/>
                     <alias name="A" value="127"/>
                     <alias name="B" value="0"/>
+                    <alias name="C" value="3"/>
+                    <alias name="D" value="4"/>
                 </translation>
             </select_favorite_fx_bank>
         </userio>
@@ -1153,10 +1171,58 @@
         <userio event="output">
             <select_favorite_fx_bank deck_set="DJ Effects" deck_id="0" slot_id="0">
                 <translation action_on="any">
+                    <alias name="Off" value="0"/>
                     <alias name="A" value="0"/>
                     <alias name="B" value="127"/>
+                    <alias name="C" value="3"/>
+                    <alias name="D" value="4"/>
                 </translation>
             </select_favorite_fx_bank>
+        </userio>
+    </control>
+    <control channel="2" event_type="Note On" control="104">
+        <userio event="click">
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="2">
+                <translation action_on="press" behaviour="static" static_value="on"/>
+            </channel_effects_select>
+        </userio>
+        <userio event="output">
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="2">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </channel_effects_select>
+        </userio>
+    </control>
+    <control channel="3" event_type="Note On" control="104">
+        <userio event="click">
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="on"/>
+            </channel_effects_select>
+        </userio>
+        <userio event="output">
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </channel_effects_select>
+        </userio>
+    </control>
+    <control channel="4" event_type="Note On" control="104">
+        <userio event="click">
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="3">
+                <translation action_on="press" behaviour="static" static_value="on"/>
+            </channel_effects_select>
+        </userio>
+        <userio event="output">
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="3">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </channel_effects_select>
         </userio>
     </control>
 </midi>
