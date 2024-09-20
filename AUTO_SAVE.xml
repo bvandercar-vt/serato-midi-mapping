@@ -1,4 +1,4 @@
-<midi app="Serato DJ Pro 3.0.12.266">
+<midi app="Serato DJ Pro 3.2.1.914">
     <control channel="4" event_type="Note On" control="9">
         <userio event="click">
             <beat_jump deck_set="Default" deck_id="3" slot_id="0">
@@ -284,7 +284,6 @@
         <userio event="output">
             <select_favorite_fx_bank deck_set="DJ Effects" deck_id="0" slot_id="0">
                 <translation action_on="any">
-                    <alias name="Off" value="0"/>
                     <alias name="A" value="127"/>
                     <alias name="B" value="0"/>
                 </translation>
@@ -1154,7 +1153,6 @@
         <userio event="output">
             <select_favorite_fx_bank deck_set="DJ Effects" deck_id="0" slot_id="0">
                 <translation action_on="any">
-                    <alias name="Off" value="0"/>
                     <alias name="A" value="0"/>
                     <alias name="B" value="127"/>
                 </translation>
