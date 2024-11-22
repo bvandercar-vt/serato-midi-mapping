@@ -301,7 +301,7 @@
             </channel_effects_select>
         </userio>
     </control>
-    <!-- Shift+Flip buttons perform key flip -->
+    <!-- Shift+Flip buttons perform key shift -->
     <control channel="1" event_type="Note On" control="90">
         <userio event="click">
             <key_shift deck_set="Default" deck_id="0" slot_id="0">
