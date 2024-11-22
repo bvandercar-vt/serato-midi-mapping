@@ -1,5 +1,5 @@
-<midi app="Serato DJ Pro 3.0.12.266">
-    <!-- Panel Select (FX Panel Toggle) -->
+<midi app="Serato DJ Pro 3.2.2.659">
+    <!-- Panel Select toggles FX Panel visibility -->
     <control channel="7" event_type="Note On" control="120">
         <userio event="click">
             <widget_mode deck_set="Default" deck_id="0" slot_id="3">
@@ -7,7 +7,7 @@
             </widget_mode>
         </userio>
     </control>
-    <!-- # of Decks Toggle -->
+    <!-- Shift+Panel Selct toggles # of Decks -->
     <control channel="7" event_type="Note On" control="121">
         <userio event="click">
             <num_decks_displayed deck_set="Default" deck_id="0" slot_id="0">
@@ -15,7 +15,7 @@
             </num_decks_displayed>
         </userio>
     </control>
-    <!-- Sampler Volume controls Upfader Curve -->
+    <!-- Sampler Fader controls Upfader Curve -->
     <!-- <control channel="7" event_type="Control Change" control="3">
         <userio event="click">
             <upfader_curve deck_set="Default" deck_id="0" slot_id="0">
@@ -23,7 +23,7 @@
             </upfader_curve>
         </userio>
     </control> -->
-    <!-- Shift + scroll controls zoom -->
+    <!-- Shift+scroll controls zoom -->
     <control channel="7" event_type="Control Change" data_type="Relative 2&apos;s Complement" control="100">
         <userio event="click">
             <zoom_level_adjust deck_set="Default" deck_id="0" slot_id="0">
@@ -31,8 +31,8 @@
             </zoom_level_adjust>
         </userio>
     </control>
-    <!-- Shift + Deck 1 "Slot" button sets record gain to set value -->
-    <control channel="1" event_type="Note On" control="89">
+    <!-- Shift+Load Prepare sets record gain to set value -->
+    <control channel="7" event_type="Note On" control="104">
         <userio event="click">
             <record_gain deck_set="Default" deck_id="0" slot_id="0">
                 <translation >
@@ -41,7 +41,7 @@
             </record_gain>
         </userio>
     </control>
-    <!-- Shift + FX control track gains -->
+    <!-- Shift+FX control track gains -->
     <control channel="7" event_type="Note On" control="112">
         <userio event="click">
             <track_gain deck_set="Default" deck_id="0" slot_id="0">
@@ -98,7 +98,7 @@
             </track_gain>
         </userio>
     </control>
-    <!-- Shift + FX knob controls track gain -->
+    <!-- Shift+FX knob controls track gain -->
     <control channel="5" event_type="Control Change" data_type="Relative 2&apos;s Complement" control="16">
         <userio event="click">
             <track_gain deck_set="Default" deck_id="0" slot_id="0">
@@ -119,7 +119,7 @@
             </track_gain>
         </userio>
     </control>
-    <!-- Shift + Cue ejects track -->
+    <!-- Shift+Cue ejects track -->
     <control channel="1" event_type="Note On" control="72">
         <userio event="click">
             <eject deck_set="Default" deck_id="0" slot_id="0">
@@ -180,149 +180,149 @@
             </eject>
         </userio>
     </control>
-    <!-- Key Shift Down/Up - Output indicates the shift mode -->
+    <!-- Flip buttons control Channel FX-->
     <control channel="1" event_type="Note On" control="74">
         <userio event="click">
-            <key_shift deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="press" behaviour="static" static_value="Down"/>
-            </key_shift>
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="on"/>
+            </channel_effects_select>
         </userio>
         <userio event="output">
-            <musical_key_sync deck_set="Default" deck_id="0" slot_id="0">
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="0">
                 <translation action_on="any">
                     <alias name="on" value="127"/>
                     <alias name="off" value="0"/>
-                    <alias name="disabled" value="0"/>
                 </translation>
-            </musical_key_sync>
+            </channel_effects_select>
         </userio>
     </control>
     <control channel="1" event_type="Note On" control="75">
         <userio event="click">
-            <key_shift deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="press" behaviour="static" static_value="Up"/>
-            </key_shift>
-        </userio>
-        <!-- <userio event="output">
-            <key_shift_feedback deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </key_shift_feedback>
-        </userio> -->
-        <userio event="output">
-            <codfather_ac deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                    <alias name="disabled" value="0"/>
-                </translation>
-            </codfather_ac>
-        </userio>
-    </control>
-    <control channel="2" event_type="Note On" control="74">
-        <userio event="click">
-            <key_shift deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="press" behaviour="static" static_value="Down"/>
-            </key_shift>
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="1">
+                <translation action_on="press" behaviour="static" static_value="on"/>
+            </channel_effects_select>
         </userio>
         <userio event="output">
-            <musical_key_sync deck_set="Default" deck_id="1" slot_id="0">
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="1">
                 <translation action_on="any">
                     <alias name="on" value="127"/>
                     <alias name="off" value="0"/>
-                    <alias name="disabled" value="0"/>
                 </translation>
-            </musical_key_sync>
-        </userio>
-    </control>
-    <control channel="2" event_type="Note On" control="75">
-        <userio event="click">
-            <key_shift deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="press" behaviour="static" static_value="Up"/>
-            </key_shift>
-        </userio>
-        <userio event="output">
-            <codfather_ac deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                    <alias name="disabled" value="0"/>
-                </translation>
-            </codfather_ac>
+            </channel_effects_select>
         </userio>
     </control>
     <control channel="3" event_type="Note On" control="74">
         <userio event="click">
-            <key_shift deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="press" behaviour="static" static_value="Down"/>
-            </key_shift>
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="on"/>
+            </channel_effects_select>
         </userio>
         <userio event="output">
-            <musical_key_sync deck_set="Default" deck_id="2" slot_id="0">
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="0">
                 <translation action_on="any">
                     <alias name="on" value="127"/>
                     <alias name="off" value="0"/>
-                    <alias name="disabled" value="0"/>
                 </translation>
-            </musical_key_sync>
+            </channel_effects_select>
         </userio>
     </control>
     <control channel="3" event_type="Note On" control="75">
         <userio event="click">
-            <key_shift deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="press" behaviour="static" static_value="Up"/>
-            </key_shift>
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="1">
+                <translation action_on="press" behaviour="static" static_value="on"/>
+            </channel_effects_select>
         </userio>
         <userio event="output">
-            <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="1">
                 <translation action_on="any">
                     <alias name="on" value="127"/>
                     <alias name="off" value="0"/>
-                    <alias name="disabled" value="0"/>
                 </translation>
-            </codfather_ac>
+            </channel_effects_select>
+        </userio>
+    </control>
+    <control channel="2" event_type="Note On" control="74">
+        <userio event="click">
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="2">
+                <translation action_on="press" behaviour="static" static_value="on"/>
+            </channel_effects_select>
+        </userio>
+        <userio event="output">
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="2">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </channel_effects_select>
+        </userio>
+    </control>
+    <control channel="2" event_type="Note On" control="75">
+        <userio event="click">
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="3">
+                <translation action_on="press" behaviour="static" static_value="on"/>
+            </channel_effects_select>
+        </userio>
+        <userio event="output">
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="3">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </channel_effects_select>
         </userio>
     </control>
     <control channel="4" event_type="Note On" control="74">
         <userio event="click">
-            <key_shift deck_set="Default" deck_id="3" slot_id="0">
-                <translation action_on="press" behaviour="static" static_value="Down"/>
-            </key_shift>
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="2">
+                <translation action_on="press" behaviour="static" static_value="on"/>
+            </channel_effects_select>
         </userio>
         <userio event="output">
-            <musical_key_sync deck_set="Default" deck_id="3" slot_id="0">
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="2">
                 <translation action_on="any">
                     <alias name="on" value="127"/>
                     <alias name="off" value="0"/>
-                    <alias name="disabled" value="0"/>
                 </translation>
-            </musical_key_sync>
+            </channel_effects_select>
         </userio>
     </control>
     <control channel="4" event_type="Note On" control="75">
         <userio event="click">
-            <key_shift deck_set="Default" deck_id="3" slot_id="0">
-                <translation action_on="press" behaviour="static" static_value="Up"/>
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="3">
+                <translation action_on="press" behaviour="static" static_value="on"/>
+            </channel_effects_select>
+        </userio>
+        <userio event="output">
+            <channel_effects_select deck_set="Default" deck_id="0" slot_id="3">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                </translation>
+            </channel_effects_select>
+        </userio>
+    </control>
+    <!-- Shift+Flip buttons perform key flip -->
+    <control channel="1" event_type="Note On" control="90">
+        <userio event="click">
+            <key_shift deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Down"/>
             </key_shift>
         </userio>
         <userio event="output">
-            <codfather_ac deck_set="Default" deck_id="3" slot_id="0">
+            <musical_key_sync deck_set="Default" deck_id="0" slot_id="0">
                 <translation action_on="any">
                     <alias name="on" value="127"/>
                     <alias name="off" value="0"/>
                     <alias name="disabled" value="0"/>
                 </translation>
-            </codfather_ac>
+            </musical_key_sync>
         </userio>
     </control>
-    <!-- Key Sync -->
-    <control channel="1" event_type="Note On" control="90">
+    <control channel="1" event_type="Note On" control="91">
         <userio event="click">
-            <musical_key_sync deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </musical_key_sync>
+            <key_shift deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Up"/>
+            </key_shift>
         </userio>
         <userio event="output">
             <musical_key_sync deck_set="Default" deck_id="0" slot_id="0">
@@ -336,9 +336,25 @@
     </control>
     <control channel="2" event_type="Note On" control="90">
         <userio event="click">
+            <key_shift deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Down"/>
+            </key_shift>
+        </userio>
+        <userio event="output">
             <musical_key_sync deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
             </musical_key_sync>
+        </userio>
+    </control>
+    <control channel="2" event_type="Note On" control="91">
+        <userio event="click">
+            <key_shift deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Up"/>
+            </key_shift>
         </userio>
         <userio event="output">
             <musical_key_sync deck_set="Default" deck_id="1" slot_id="0">
@@ -352,9 +368,25 @@
     </control>
     <control channel="3" event_type="Note On" control="90">
         <userio event="click">
+            <key_shift deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Down"/>
+            </key_shift>
+        </userio>
+        <userio event="output">
             <musical_key_sync deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
             </musical_key_sync>
+        </userio>
+    </control>
+    <control channel="3" event_type="Note On" control="91">
+        <userio event="click">
+            <key_shift deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Up"/>
+            </key_shift>
         </userio>
         <userio event="output">
             <musical_key_sync deck_set="Default" deck_id="2" slot_id="0">
@@ -368,9 +400,9 @@
     </control>
     <control channel="4" event_type="Note On" control="90">
         <userio event="click">
-            <musical_key_sync deck_set="Default" deck_id="3" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </musical_key_sync>
+            <key_shift deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Down"/>
+            </key_shift>
         </userio>
         <userio event="output">
             <musical_key_sync deck_set="Default" deck_id="3" slot_id="0">
@@ -380,59 +412,104 @@
                     <alias name="disabled" value="0"/>
                 </translation>
             </musical_key_sync>
-        </userio>
-    </control>
-    <!-- A Capella -->
-    <control channel="1" event_type="Note On" control="91">
-        <userio event="click">
-            <codfather_ac deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </codfather_ac>
-        </userio>
-        <userio event="output">
-            <codfather_ac deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                    <alias name="disabled" value="0"/>
-                </translation>
-            </codfather_ac>
-        </userio>
-    </control>
-    <control channel="2" event_type="Note On" control="91">
-        <userio event="click">
-            <codfather_ac deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </codfather_ac>
-        </userio>
-        <userio event="output">
-            <codfather_ac deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                    <alias name="disabled" value="0"/>
-                </translation>
-            </codfather_ac>
-        </userio>
-    </control>
-    <control channel="3" event_type="Note On" control="91">
-        <userio event="click">
-            <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </codfather_ac>
-        </userio>
-        <userio event="output">
-            <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                    <alias name="disabled" value="0"/>
-                </translation>
-            </codfather_ac>
         </userio>
     </control>
     <control channel="4" event_type="Note On" control="91">
         <userio event="click">
+            <key_shift deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="press" behaviour="static" static_value="Up"/>
+            </key_shift>
+        </userio>
+        <userio event="output">
+            <musical_key_sync deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
+            </musical_key_sync>
+        </userio>
+    </control>
+    <!-- Shift+Slot button performs Key Sync -->
+    <control channel="1" event_type="Note On" control="89">
+        <userio event="click">
+            <musical_key_sync deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </musical_key_sync>
+        </userio>
+    </control>
+    <control channel="2" event_type="Note On" control="89">
+        <userio event="click">
+            <musical_key_sync deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </musical_key_sync>
+        </userio>
+    </control>
+    <control channel="3" event_type="Note On" control="89">
+        <userio event="click">
+            <musical_key_sync deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </musical_key_sync>
+        </userio>
+    </control>
+    <control channel="4" event_type="Note On" control="89">
+        <userio event="click">
+            <musical_key_sync deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </musical_key_sync>
+        </userio>
+    </control>
+    <!-- Shift+Grid buttons control stems. Top for A Capella, bottom for instruments -->
+    <control channel="1" event_type="Note On" control="100">
+        <userio event="click">
+            <codfather_ac deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </codfather_ac>
+        </userio>
+        <userio event="output">
+            <codfather_ac deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
+            </codfather_ac>
+        </userio>
+    </control>
+    <control channel="2" event_type="Note On" control="100">
+        <userio event="click">
+            <codfather_ac deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </codfather_ac>
+        </userio>
+        <userio event="output">
+            <codfather_ac deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
+            </codfather_ac>
+        </userio>
+    </control>
+    <control channel="3" event_type="Note On" control="100">
+        <userio event="click">
+            <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </codfather_ac>
+        </userio>
+        <userio event="output">
+            <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
+            </codfather_ac>
+        </userio>
+    </control>
+    <control channel="4" event_type="Note On" control="100">
+        <userio event="click">
             <codfather_ac deck_set="Default" deck_id="3" slot_id="0">
                 <translation action_on="press" behaviour="toggle"/>
             </codfather_ac>
@@ -447,7 +524,71 @@
             </codfather_ac>
         </userio>
     </control>
-    <!-- Beat Jumps -->
+    <control channel="1" event_type="Note On" control="101">
+        <userio event="click">
+            <codfather_in deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </codfather_in>
+        </userio>
+        <userio event="output">
+            <codfather_in deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
+            </codfather_in>
+        </userio>
+    </control>
+    <control channel="2" event_type="Note On" control="101">
+        <userio event="click">
+            <codfather_in deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </codfather_in>
+        </userio>
+        <userio event="output">
+            <codfather_in deck_set="Default" deck_id="1" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
+            </codfather_in>
+        </userio>
+    </control>
+    <control channel="3" event_type="Note On" control="101">
+        <userio event="click">
+            <codfather_in deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </codfather_in>
+        </userio>
+        <userio event="output">
+            <codfather_in deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
+            </codfather_in>
+        </userio>
+    </control>
+    <control channel="4" event_type="Note On" control="101">
+        <userio event="click">
+            <codfather_in deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </codfather_in>
+        </userio>
+        <userio event="output">
+            <codfather_in deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
+            </codfather_in>
+        </userio>
+    </control>
+    <!-- Paremeter buttons perform Beat Jumps -->
     <control channel="1" event_type="Note On" control="1">
         <userio event="click">
             <beat_jump deck_set="Default" deck_id="0" slot_id="0">
@@ -765,7 +906,7 @@
             </grid_edit_mode>
         </userio>
     </control>
-    <!-- Quantize -->
+    <!-- Censor button toggles Quantize -->
     <control channel="1" event_type="Note On" control="21">
         <userio event="click">
             <quantize deck_set="Default" deck_id="0" slot_id="0">
@@ -905,7 +1046,7 @@
             </effect_bank_beats_multiplier>
         </userio>
     </control>
-    <!-- Shift + FX Button sets FX bank -->
+    <!-- Shift+FX Mode Button sets FX bank -->
     <control channel="5" event_type="Note On" control="102">
         <userio event="click">
             <select_favorite_fx_bank deck_set="DJ Effects" deck_id="0" slot_id="0">
@@ -936,65 +1077,6 @@
             </select_favorite_fx_bank>
         </userio>
     </control>
-    <control channel="1" event_type="Note On" control="104">
-        <userio event="click">
-            <channel_effects_select deck_set="Default" deck_id="0" slot_id="1">
-                <translation action_on="press" behaviour="static" static_value="on"/>
-            </channel_effects_select>
-        </userio>
-        <userio event="output">
-            <channel_effects_select deck_set="Default" deck_id="0" slot_id="1">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </channel_effects_select>
-        </userio>
-    </control>
-    <control channel="2" event_type="Note On" control="104">
-        <userio event="click">
-            <channel_effects_select deck_set="Default" deck_id="0" slot_id="2">
-                <translation action_on="press" behaviour="static" static_value="on"/>
-            </channel_effects_select>
-        </userio>
-        <userio event="output">
-            <channel_effects_select deck_set="Default" deck_id="0" slot_id="2">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </channel_effects_select>
-        </userio>
-    </control>
-    <control channel="3" event_type="Note On" control="104">
-        <userio event="click">
-            <channel_effects_select deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="press" behaviour="static" static_value="on"/>
-            </channel_effects_select>
-        </userio>
-        <userio event="output">
-            <channel_effects_select deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </channel_effects_select>
-        </userio>
-    </control>
-    <control channel="4" event_type="Note On" control="104">
-        <userio event="click">
-            <channel_effects_select deck_set="Default" deck_id="0" slot_id="3">
-                <translation action_on="press" behaviour="static" static_value="on"/>
-            </channel_effects_select>
-        </userio>
-        <userio event="output">
-            <channel_effects_select deck_set="Default" deck_id="0" slot_id="3">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </channel_effects_select>
-        </userio>
-    </control>
+
 
 </midi>
