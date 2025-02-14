@@ -1,18 +1,18 @@
 <midi app="Serato DJ Pro 3.2.2.659">
-    <!-- Panel Select toggles FX Panel visibility -->
+    <!-- Shift+Panel Selct toggles # of Decks  -->
     <control channel="7" event_type="Note On" control="120">
-        <userio event="click">
-            <widget_mode deck_set="Default" deck_id="0" slot_id="3">
-                <translation action_on="press" behaviour="multi_toggle"/>
-            </widget_mode>
-        </userio>
-    </control>
-    <!-- Shift+Panel Selct toggles # of Decks -->
-    <control channel="7" event_type="Note On" control="121">
         <userio event="click">
             <num_decks_displayed deck_set="Default" deck_id="0" slot_id="0">
                 <translation action_on="press" behaviour="toggle"/>
             </num_decks_displayed>
+        </userio>
+    </control>
+    <!-- Shift+Panel Select toggles FX Panel visibility -->
+    <control channel="7" event_type="Note On" control="121">
+        <userio event="click">
+            <widget_mode deck_set="Default" deck_id="0" slot_id="3">
+                <translation action_on="press" behaviour="multi_toggle"/>
+            </widget_mode>
         </userio>
     </control>
     <!-- Sampler Fader controls Upfader Curve -->

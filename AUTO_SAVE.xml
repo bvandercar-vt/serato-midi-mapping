@@ -1,4 +1,4 @@
-<midi app="Serato DJ Pro 3.2.2.659">
+<midi app="Serato DJ Pro 3.2.4.532">
     <control channel="4" event_type="Note On" control="9">
         <userio event="click">
             <beat_jump deck_set="Default" deck_id="3" slot_id="0">
@@ -65,17 +65,18 @@
     </control>
     <control channel="7" event_type="Note On" control="120">
         <userio event="click">
-            <widget_mode deck_set="Default" deck_id="0" slot_id="3">
-                <translation action_on="press" behaviour="multi_toggle"/>
-            </widget_mode>
+            <num_decks_displayed deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </num_decks_displayed>
         </userio>
         <userio event="output">
-            <widget_mode deck_set="Default" deck_id="0" slot_id="3">
+            <num_decks_displayed deck_set="Default" deck_id="0" slot_id="0">
                 <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
+                    <alias name="2Deck" value="0"/>
+                    <alias name="3Deck" value="0"/>
+                    <alias name="4Deck" value="0"/>
                 </translation>
-            </widget_mode>
+            </num_decks_displayed>
         </userio>
     </control>
     <control channel="7" event_type="Note On" control="85">
@@ -248,18 +249,17 @@
     </control>
     <control channel="7" event_type="Note On" control="121">
         <userio event="click">
-            <num_decks_displayed deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </num_decks_displayed>
+            <widget_mode deck_set="Default" deck_id="0" slot_id="3">
+                <translation action_on="press" behaviour="multi_toggle"/>
+            </widget_mode>
         </userio>
         <userio event="output">
-            <num_decks_displayed deck_set="Default" deck_id="0" slot_id="0">
+            <widget_mode deck_set="Default" deck_id="0" slot_id="3">
                 <translation action_on="any">
-                    <alias name="2Deck" value="0"/>
-                    <alias name="3Deck" value="0"/>
-                    <alias name="4Deck" value="0"/>
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
                 </translation>
-            </num_decks_displayed>
+            </widget_mode>
         </userio>
     </control>
     <control channel="3" event_type="Note On" control="9">
