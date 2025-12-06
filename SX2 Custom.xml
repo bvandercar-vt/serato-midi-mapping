@@ -1000,6 +1000,85 @@
             </select_favorite_fx_bank>
         </userio>
     </control>
-
-
+    <!-- Grid set button (shift) doesn't work unless in grid edit mode -->
+    <control channel="1" event_type="Note On" control="100">
+        <case>
+            <condition>
+                <grid_edit_mode deck_set="Default" deck_id="0" slot_id="0" operator="equal" cmp_value="on"/>
+            </condition>
+            <userio event="click">
+                <grid_set deck_set="Default" deck_id="0" slot_id="0">
+                    <translation action_on="any" behaviour="explicit"/>
+                </grid_set>
+            </userio>
+            <userio event="output">
+                <grid_set deck_set="Default" deck_id="0" slot_id="0">
+                    <translation action_on="any">
+                        <alias name="on" value="127"/>
+                        <alias name="off" value="0"/>
+                    </translation>
+                </grid_set>
+            </userio>
+        </case>
+    </control>
+    <control channel="2" event_type="Note On" control="100">
+        <case>
+            <condition>
+                <grid_edit_mode deck_set="Default" deck_id="1" slot_id="0" operator="equal" cmp_value="on"/>
+            </condition>
+            <userio event="click">
+                <grid_set deck_set="Default" deck_id="1" slot_id="0">
+                    <translation action_on="any" behaviour="explicit"/>
+                </grid_set>
+            </userio>
+            <userio event="output">
+                <grid_set deck_set="Default" deck_id="1" slot_id="0">
+                    <translation action_on="any">
+                        <alias name="on" value="127"/>
+                        <alias name="off" value="0"/>
+                    </translation>
+                </grid_set>
+            </userio>
+        </case>
+    </control>
+    <control channel="3" event_type="Note On" control="100">
+        <case>
+            <condition>
+                <grid_edit_mode deck_set="Default" deck_id="2" slot_id="0" operator="equal" cmp_value="on"/>
+            </condition>
+            <userio event="click">
+                <grid_set deck_set="Default" deck_id="2" slot_id="0">
+                    <translation action_on="any" behaviour="explicit"/>
+                </grid_set>
+            </userio>
+            <userio event="output">
+                <grid_set deck_set="Default" deck_id="2" slot_id="0">
+                    <translation action_on="any">
+                        <alias name="on" value="127"/>
+                        <alias name="off" value="0"/>
+                    </translation>
+                </grid_set>
+            </userio>
+        </case>
+    </control>
+    <control channel="4" event_type="Note On" control="100">
+        <case>
+            <condition>
+                <grid_edit_mode deck_set="Default" deck_id="3" slot_id="0" operator="equal" cmp_value="on"/>
+            </condition>
+            <userio event="click">
+                <grid_set deck_set="Default" deck_id="3" slot_id="0">
+                    <translation action_on="any" behaviour="explicit"/>
+                </grid_set>
+            </userio>
+            <userio event="output">
+                <grid_set deck_set="Default" deck_id="3" slot_id="0">
+                    <translation action_on="any">
+                        <alias name="on" value="127"/>
+                        <alias name="off" value="0"/>
+                    </translation>
+                </grid_set>
+            </userio>
+        </case>
+    </control>
 </midi>
