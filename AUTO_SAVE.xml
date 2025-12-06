@@ -103,38 +103,6 @@
             </grid_edit_mode>
         </userio>
     </control>
-    <control channel="1" event_type="Note On" control="100">
-        <userio event="click">
-            <codfather_ac deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </codfather_ac>
-        </userio>
-        <userio event="output">
-            <codfather_ac deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                    <alias name="disabled" value="0"/>
-                </translation>
-            </codfather_ac>
-        </userio>
-    </control>
-    <control channel="2" event_type="Note On" control="100">
-        <userio event="click">
-            <codfather_ac deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </codfather_ac>
-        </userio>
-        <userio event="output">
-            <codfather_ac deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                    <alias name="disabled" value="0"/>
-                </translation>
-            </codfather_ac>
-        </userio>
-    </control>
     <control channel="4" event_type="Note On" control="90">
         <userio event="click">
             <key_shift deck_set="Default" deck_id="3" slot_id="0">
@@ -289,6 +257,22 @@
             </track_gain>
         </userio>
     </control>
+    <control channel="11" event_type="Note On" control="20">
+        <userio event="click">
+            <codfather_ac deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </codfather_ac>
+        </userio>
+        <userio event="output">
+            <codfather_ac deck_set="Default" deck_id="3" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
+            </codfather_ac>
+        </userio>
+    </control>
     <control channel="7" event_type="Note On" control="115">
         <userio event="click">
             <track_gain deck_set="Default" deck_id="3" slot_id="0">
@@ -334,6 +318,38 @@
             <zoom_level_adjust deck_set="Default" deck_id="0" slot_id="0">
                 <translation action_on="any" behaviour="explicit"/>
             </zoom_level_adjust>
+        </userio>
+    </control>
+    <control channel="8" event_type="Note On" control="20">
+        <userio event="click">
+            <codfather_ac deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </codfather_ac>
+        </userio>
+        <userio event="output">
+            <codfather_ac deck_set="Default" deck_id="0" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
+            </codfather_ac>
+        </userio>
+    </control>
+    <control channel="10" event_type="Note On" control="20">
+        <userio event="click">
+            <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="press" behaviour="toggle"/>
+            </codfather_ac>
+        </userio>
+        <userio event="output">
+            <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
+                <translation action_on="any">
+                    <alias name="on" value="127"/>
+                    <alias name="off" value="0"/>
+                    <alias name="disabled" value="0"/>
+                </translation>
+            </codfather_ac>
         </userio>
     </control>
     <control channel="3" event_type="Note On" control="44">
@@ -771,30 +787,14 @@
             </musical_key_sync>
         </userio>
     </control>
-    <control channel="3" event_type="Note On" control="100">
+    <control channel="9" event_type="Note On" control="20">
         <userio event="click">
-            <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
+            <codfather_ac deck_set="Default" deck_id="1" slot_id="0">
                 <translation action_on="press" behaviour="toggle"/>
             </codfather_ac>
         </userio>
         <userio event="output">
-            <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                    <alias name="disabled" value="0"/>
-                </translation>
-            </codfather_ac>
-        </userio>
-    </control>
-    <control channel="4" event_type="Note On" control="100">
-        <userio event="click">
-            <codfather_ac deck_set="Default" deck_id="3" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </codfather_ac>
-        </userio>
-        <userio event="output">
-            <codfather_ac deck_set="Default" deck_id="3" slot_id="0">
+            <codfather_ac deck_set="Default" deck_id="1" slot_id="0">
                 <translation action_on="any">
                     <alias name="on" value="127"/>
                     <alias name="off" value="0"/>

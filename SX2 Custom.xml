@@ -1,4 +1,8 @@
 <midi app="Serato DJ Pro 3.2.2.659">
+    <!-- HOT CUE COLOR VALUES:
+        127 = Green
+        49 = Pink
+    -->
     <!-- Shift+Panel Selct toggles # of Decks  -->
     <control channel="7" event_type="Note On" control="120">
         <userio event="click">
@@ -460,7 +464,7 @@
         </userio>
     </control>
     <!-- Shift+Grid buttons control stems. Top for A Capella, bottom for instruments -->
-    <control channel="1" event_type="Note On" control="100">
+    <control channel="8" event_type="Note On" control="20">
         <userio event="click">
             <codfather_ac deck_set="Default" deck_id="0" slot_id="0">
                 <translation action_on="press" behaviour="toggle"/>
@@ -476,7 +480,7 @@
             </codfather_ac>
         </userio>
     </control>
-    <control channel="2" event_type="Note On" control="100">
+    <control channel="9" event_type="Note On" control="20">
         <userio event="click">
             <codfather_ac deck_set="Default" deck_id="1" slot_id="0">
                 <translation action_on="press" behaviour="toggle"/>
@@ -492,7 +496,7 @@
             </codfather_ac>
         </userio>
     </control>
-    <control channel="3" event_type="Note On" control="100">
+    <control channel="10" event_type="Note On" control="20">
         <userio event="click">
             <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
                 <translation action_on="press" behaviour="toggle"/>
@@ -508,7 +512,7 @@
             </codfather_ac>
         </userio>
     </control>
-    <control channel="4" event_type="Note On" control="100">
+    <control channel="11" event_type="Note On" control="20">
         <userio event="click">
             <codfather_ac deck_set="Default" deck_id="3" slot_id="0">
                 <translation action_on="press" behaviour="toggle"/>
