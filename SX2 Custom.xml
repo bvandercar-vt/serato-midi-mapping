@@ -906,23 +906,14 @@
             </grid_edit_mode>
         </userio>
     </control>
-    <!-- Censor button toggles Quantize -->
-    <control channel="1" event_type="Note On" control="21">
-        <userio event="click">
-            <quantize deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </quantize>
-            <quantize deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </quantize>
-            <quantize deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </quantize>
-            <quantize deck_set="Default" deck_id="3" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </quantize>
-        </userio>
+    <!-- Censor button -->
+    <!-- <control channel="1" event_type="Note On" control="21">
+         Other decks increase channel
+    </control> -->
+    <!-- Quantize output -->
+    <!-- <control .....>
         <userio event="output">
+           Other decks decks increase deck_id 
             <quantize deck_set="Default" deck_id="0" slot_id="0">
                 <translation action_on="any">
                     <alias name="on" value="127"/>
@@ -930,79 +921,7 @@
                 </translation>
             </quantize>
         </userio>
-    </control>
-    <control channel="2" event_type="Note On" control="21">
-        <userio event="click">
-            <quantize deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </quantize>
-            <quantize deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </quantize>
-            <quantize deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </quantize>
-            <quantize deck_set="Default" deck_id="3" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </quantize>
-        </userio>
-        <userio event="output">
-            <quantize deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-        </userio>
-    </control>
-    <control channel="3" event_type="Note On" control="21">
-        <userio event="click">
-            <quantize deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </quantize>
-            <quantize deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </quantize>
-            <quantize deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </quantize>
-            <quantize deck_set="Default" deck_id="3" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </quantize>
-        </userio>
-        <userio event="output">
-            <quantize deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-        </userio>
-    </control>
-    <control channel="4" event_type="Note On" control="21">
-        <userio event="click">
-            <quantize deck_set="Default" deck_id="0" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </quantize>
-            <quantize deck_set="Default" deck_id="1" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </quantize>
-            <quantize deck_set="Default" deck_id="2" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </quantize>
-            <quantize deck_set="Default" deck_id="3" slot_id="0">
-                <translation action_on="press" behaviour="toggle"/>
-            </quantize>
-        </userio>
-        <userio event="output">
-            <quantize deck_set="Default" deck_id="3" slot_id="0">
-                <translation action_on="any">
-                    <alias name="on" value="127"/>
-                    <alias name="off" value="0"/>
-                </translation>
-            </quantize>
-        </userio>
-    </control>
+    </control> -->
     <!-- FX Module "Tap" button sets to 1/2 beats  -->
     <control channel="5" event_type="Note On" control="74">
         <userio event="click">
