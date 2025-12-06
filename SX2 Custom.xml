@@ -1,7 +1,19 @@
 <midi app="Serato DJ Pro 3.2.2.659">
     <!-- HOT CUE COLOR VALUES:
-        127 = Green
+        20 - 29 = Green
         49 = Pink
+        127 = Default ?
+        
+        Given by ChatGPT:
+        1–10	Blue
+        20–29	Green
+        30–39	Yellow
+        40–49	Orange
+        50	Pink
+        80	Light‑green
+        100	Light yellow
+        106 (or 116)	Red 
+        120	Purple
     -->
     <!-- Shift+Panel Selct toggles # of Decks  -->
     <control channel="7" event_type="Note On" control="120">
@@ -464,7 +476,7 @@
         </userio>
     </control>
     <!-- Shift+Grid buttons control stems. Top for A Capella, bottom for instruments -->
-    <control channel="8" event_type="Note On" control="20">
+    <control channel="8" event_type="Note On" control="36">
         <userio event="click">
             <codfather_ac deck_set="Default" deck_id="0" slot_id="0">
                 <translation action_on="press" behaviour="toggle"/>
@@ -473,14 +485,14 @@
         <userio event="output">
             <codfather_ac deck_set="Default" deck_id="0" slot_id="0">
                 <translation action_on="any">
-                    <alias name="on" value="127"/>
+                    <alias name="on" value="25"/>
                     <alias name="off" value="0"/>
                     <alias name="disabled" value="0"/>
                 </translation>
             </codfather_ac>
         </userio>
     </control>
-    <control channel="9" event_type="Note On" control="20">
+    <control channel="9" event_type="Note On" control="36">
         <userio event="click">
             <codfather_ac deck_set="Default" deck_id="1" slot_id="0">
                 <translation action_on="press" behaviour="toggle"/>
@@ -489,14 +501,14 @@
         <userio event="output">
             <codfather_ac deck_set="Default" deck_id="1" slot_id="0">
                 <translation action_on="any">
-                    <alias name="on" value="127"/>
+                    <alias name="on" value="25"/>
                     <alias name="off" value="0"/>
                     <alias name="disabled" value="0"/>
                 </translation>
             </codfather_ac>
         </userio>
     </control>
-    <control channel="10" event_type="Note On" control="20">
+    <control channel="10" event_type="Note On" control="36">
         <userio event="click">
             <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
                 <translation action_on="press" behaviour="toggle"/>
@@ -505,14 +517,14 @@
         <userio event="output">
             <codfather_ac deck_set="Default" deck_id="2" slot_id="0">
                 <translation action_on="any">
-                    <alias name="on" value="127"/>
+                    <alias name="on" value="25"/>
                     <alias name="off" value="0"/>
                     <alias name="disabled" value="0"/>
                 </translation>
             </codfather_ac>
         </userio>
     </control>
-    <control channel="11" event_type="Note On" control="20">
+    <control channel="11" event_type="Note On" control="36">
         <userio event="click">
             <codfather_ac deck_set="Default" deck_id="3" slot_id="0">
                 <translation action_on="press" behaviour="toggle"/>
@@ -521,14 +533,14 @@
         <userio event="output">
             <codfather_ac deck_set="Default" deck_id="3" slot_id="0">
                 <translation action_on="any">
-                    <alias name="on" value="127"/>
+                    <alias name="on" value="25"/>
                     <alias name="off" value="0"/>
                     <alias name="disabled" value="0"/>
                 </translation>
             </codfather_ac>
         </userio>
     </control>
-    <control channel="1" event_type="Note On" control="101">
+    <control channel="8" event_type="Note On" control="37">
         <userio event="click">
             <codfather_in deck_set="Default" deck_id="0" slot_id="0">
                 <translation action_on="press" behaviour="toggle"/>
@@ -537,14 +549,14 @@
         <userio event="output">
             <codfather_in deck_set="Default" deck_id="0" slot_id="0">
                 <translation action_on="any">
-                    <alias name="on" value="127"/>
+                    <alias name="on" value="25"/>
                     <alias name="off" value="0"/>
                     <alias name="disabled" value="0"/>
                 </translation>
             </codfather_in>
         </userio>
     </control>
-    <control channel="2" event_type="Note On" control="101">
+    <control channel="9" event_type="Note On" control="37">
         <userio event="click">
             <codfather_in deck_set="Default" deck_id="1" slot_id="0">
                 <translation action_on="press" behaviour="toggle"/>
@@ -553,14 +565,14 @@
         <userio event="output">
             <codfather_in deck_set="Default" deck_id="1" slot_id="0">
                 <translation action_on="any">
-                    <alias name="on" value="127"/>
+                    <alias name="on" value="25"/>
                     <alias name="off" value="0"/>
                     <alias name="disabled" value="0"/>
                 </translation>
             </codfather_in>
         </userio>
     </control>
-    <control channel="3" event_type="Note On" control="101">
+    <control channel="10" event_type="Note On" control="37">
         <userio event="click">
             <codfather_in deck_set="Default" deck_id="2" slot_id="0">
                 <translation action_on="press" behaviour="toggle"/>
@@ -569,14 +581,14 @@
         <userio event="output">
             <codfather_in deck_set="Default" deck_id="2" slot_id="0">
                 <translation action_on="any">
-                    <alias name="on" value="127"/>
+                    <alias name="on" value="25"/>
                     <alias name="off" value="0"/>
                     <alias name="disabled" value="0"/>
                 </translation>
             </codfather_in>
         </userio>
     </control>
-    <control channel="4" event_type="Note On" control="101">
+    <control channel="11" event_type="Note On" control="37">
         <userio event="click">
             <codfather_in deck_set="Default" deck_id="3" slot_id="0">
                 <translation action_on="press" behaviour="toggle"/>
