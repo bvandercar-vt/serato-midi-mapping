@@ -1294,7 +1294,7 @@
         <userio event="output">
             <codfather_in deck_set="Default" deck_id="3" slot_id="0">
                 <translation action_on="any">
-                    <alias name="on" value="127"/>
+                    <alias name="on" value="25"/>
                     <alias name="off" value="0"/>
                     <alias name="disabled" value="0"/>
                 </translation>
